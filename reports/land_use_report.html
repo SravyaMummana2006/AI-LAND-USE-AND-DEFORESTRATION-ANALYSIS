@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Land Use & Deforestation Analysis Report</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #F0F4F8;
+            color: #2C3E50;
+            line-height: 1.7;
+        }
+        .container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+        .header {
+            background: linear-gradient(135deg, #1B4F72, #2E86C1);
+            color: white;
+            padding: 36px 40px;
+            border-radius: 12px;
+            margin-bottom: 28px;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+        }
+        .header h1 { font-size: 2em; font-weight: 700; margin-bottom: 6px; }
+        .header p  { opacity: 0.85; font-size: 0.95em; }
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 28px 32px;
+            margin-bottom: 22px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+        }
+        .card h2 {
+            font-size: 1.25em;
+            color: #1B4F72;
+            border-bottom: 2px solid #EBF5FB;
+            padding-bottom: 10px;
+            margin-bottom: 18px;
+        }
+        .summary-box {
+            background: #EBF5FB;
+            border-left: 5px solid #2E86C1;
+            padding: 18px 22px;
+            border-radius: 0 8px 8px 0;
+            font-size: 1.02em;
+            margin-bottom: 10px;
+        }
+        .metric-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 16px;
+            margin-bottom: 18px;
+        }
+        .metric-box {
+            background: #F8F9FA;
+            border: 1px solid #DEE2E6;
+            border-radius: 8px;
+            padding: 16px 18px;
+            text-align: center;
+        }
+        .metric-box .value {
+            font-size: 1.9em;
+            font-weight: 700;
+            color: #1B4F72;
+        }
+        .metric-box .label {
+            font-size: 0.8em;
+            color: #7F8C8D;
+            margin-top: 4px;
+        }
+        .finding-block {
+            background: #FDFEFE;
+            border: 1px solid #E8EAED;
+            border-radius: 8px;
+            padding: 14px 18px;
+            margin-bottom: 12px;
+            font-size: 0.97em;
+        }
+        .finding-block strong { color: #1B4F72; }
+        ul.findings-list {
+            padding-left: 20px;
+            margin-top: 6px;
+        }
+        .chart-section { margin-top: 8px; }
+        .footer {
+            text-align: center;
+            color: #95A5A6;
+            font-size: 0.82em;
+            padding: 20px 0 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Land Use &amp; Deforestation Analysis Report</h1>
+        <p>AI-Powered Satellite Imagery Analysis &nbsp;|&nbsp; Generated: 2026-04-20 11:59:13</p>
+        <p style="margin-top:12px">Risk Classification: <span style="background:#E74C3C;color:white;padding:6px 16px;border-radius:20px;font-weight:bold;font-size:1.1em;">HIGH</span>
+           &nbsp;&nbsp; EIS Score: <strong>67.8 / 100</strong>
+        </p>
+    </div>
+
+    <!-- Key Metrics -->
+    <div class="card">
+        <h2>Key Metrics</h2>
+        <div class="metric-grid">
+            <div class="metric-box">
+                <div class="value">34.3%</div>
+                <div class="label">Forest Loss</div>
+            </div>
+            <div class="metric-box">
+                <div class="value">0.1%</div>
+                <div class="label">Forest Gain</div>
+            </div>
+            <div class="metric-box">
+                <div class="value">64.8%</div>
+                <div class="label">Urban Expansion</div>
+            </div>
+            <div class="metric-box">
+                <div class="value">+0.1%</div>
+                <div class="label">Water Change</div>
+            </div>
+            <div class="metric-box">
+                <div class="value">99.9%</div>
+                <div class="label">Total Changed Area</div>
+            </div>
+            <div class="metric-box">
+                <div class="value">1</div>
+                <div class="label">Changed Regions</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Executive Summary -->
+    <div class="card">
+        <h2>Executive Summary</h2>
+        <div class="summary-box">Analysis of the submitted satellite imagery pair reveals that 99.9% of the observed landscape has undergone detectable change, distributed across a single concentrated region. The composite Environmental Impact Score is 67.8/100, indicating severe environmental disruption. Risk classification: HIGH — Severe deforestation detected. Significant habitat and carbon stock loss. Recommended action: Immediate environmental intervention required. Alert conservation agencies.</div>
+    </div>
+
+    <!-- Detailed Findings -->
+    <div class="card">
+        <h2>Detailed Findings</h2>
+        <div class="finding-block"><strong>Forest:</strong> Forest cover has reduced by 34.2% (from 99.8% to 65.6% of the observed area), representing critical deforestation with a loss footprint of 34.3% of total image area. Emergency conservation intervention is immediately required.</div>
+        <div class="finding-block"><strong>Urban:</strong> Urban expansion of 64.6% detected (from 0.6% to 65.3%), indicating rapid growth of built-up infrastructure within the observed area. The concurrent forest loss of 34.3% suggests that urban development may be directly encroaching on forested land.</div>
+        <div class="finding-block"><strong>Water:</strong> Water body coverage remained stable at approximately 0.1% of the observed area.</div>
+
+        <h2 style="margin-top:20px">Per-Class Land Use Changes</h2>
+        <ul class="findings-list">
+            <li style='margin-bottom:8px'>Forest cover remained stable with no significant change detected. (0.0% → 0.0%)</li><li style='margin-bottom:8px'>Urban footprint showed no significant change between observations. (0.0% → 0.0%)</li><li style='margin-bottom:8px'>Barren land area showed no significant change detected. (0.0% → 0.0%)</li><li style='margin-bottom:8px'>Agricultural land reduced by 4.7% — possible abandonment or conversion to other use. (100.0% → 95.3%)</li><li style='margin-bottom:8px'>Water body area expanded by 4.7% — possible flooding or seasonal inflow. (0.0% → 4.7%)</li>
+        </ul>
+    </div>
+
+    <!-- Charts -->
+    <div class="card chart-section">
+        <h2>Comparative Coverage Analysis</h2>
+        <div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>                <div id="d2f388a7-4853-448d-90e0-e73d072a0035" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("d2f388a7-4853-448d-90e0-e73d072a0035")) {                    Plotly.newPlot(                        "d2f388a7-4853-448d-90e0-e73d072a0035",                        [{"marker":{"color":["#228B22","#1E90FF","#DC143C","#DAA520","#D2B48C"],"line":{"color":["#228B22","#1E90FF","#DC143C","#DAA520","#D2B48C"],"width":2},"opacity":0.55},"name":"Before (Old Image)","text":["0.0%","0.0%","0.0%","100.0%","0.0%"],"textposition":"outside","x":["Forest","Water","Urban","Agriculture","Barren"],"y":[0.0,0.0,0.0,100.0,0.0],"type":"bar"},{"marker":{"color":["#228B22","#1E90FF","#DC143C","#DAA520","#D2B48C"],"line":{"color":"white","width":1.5},"opacity":1.0},"name":"After (New Image)","text":["0.0%","4.7%","0.0%","95.3%","0.0%"],"textposition":"outside","x":["Forest","Water","Urban","Agriculture","Barren"],"y":[0.0,4.69,0.0,95.31,0.0],"type":"bar"}],                        {"template":{"data":{"candlestick":[{"decreasing":{"line":{"color":"#000033"}},"increasing":{"line":{"color":"#000032"}},"type":"candlestick"}],"contourcarpet":[{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"type":"contourcarpet"}],"contour":[{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"type":"contour"}],"heatmap":[{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"type":"heatmap"}],"histogram2d":[{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"type":"histogram2d"}],"icicle":[{"textfont":{"color":"white"},"type":"icicle"}],"sankey":[{"textfont":{"color":"#000036"},"type":"sankey"}],"scatter":[{"marker":{"line":{"width":0}},"type":"scatter"}],"table":[{"cells":{"fill":{"color":"#000038"},"font":{"color":"#000037"},"line":{"color":"#000039"}},"header":{"fill":{"color":"#000040"},"font":{"color":"#000036"},"line":{"color":"#000039"}},"type":"table"}],"waterfall":[{"connector":{"line":{"color":"#000036","width":2}},"decreasing":{"marker":{"color":"#000033"}},"increasing":{"marker":{"color":"#000032"}},"totals":{"marker":{"color":"#000034"}},"type":"waterfall"}]},"layout":{"coloraxis":{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]]},"colorscale":{"diverging":[[0.0,"#000021"],[0.1,"#000022"],[0.2,"#000023"],[0.3,"#000024"],[0.4,"#000025"],[0.5,"#000026"],[0.6,"#000027"],[0.7,"#000028"],[0.8,"#000029"],[0.9,"#000030"],[1.0,"#000031"]],"sequential":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"sequentialminus":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]]},"colorway":["#000001","#000002","#000003","#000004","#000005","#000006","#000007","#000008","#000009","#000010"]}},"title":{"font":{"size":16,"color":"#2C3E50"},"text":"Land Use Coverage: Before vs After","x":0.5},"yaxis":{"title":{"text":"Coverage (%)"},"range":[0,125.0]},"legend":{"orientation":"h","yanchor":"bottom","y":1.02,"xanchor":"right","x":1},"font":{"family":"Arial","size":12},"margin":{"t":80,"b":50,"l":60,"r":30},"barmode":"group","xaxis":{"title":{"text":"Land Use Class"}},"plot_bgcolor":"#F8F9FA","paper_bgcolor":"white"},                        {"responsive": true}                    )                };                            </script>        </div>
+    </div>
+
+    <div class="card chart-section">
+        <h2>Environmental Indicators</h2>
+        <div>                            <div id="72e11a28-59b2-4dfe-a120-663697405e75" class="plotly-graph-div" style="height:320px; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("72e11a28-59b2-4dfe-a120-663697405e75")) {                    Plotly.newPlot(                        "72e11a28-59b2-4dfe-a120-663697405e75",                        [{"domain":{"column":0,"row":0,"x":[0.0,0.45],"y":[0.0,1.0]},"gauge":{"axis":{"range":[0,100]},"bar":{"color":"#E74C3C"},"steps":[{"color":"#EAFAF1","range":[0,10]},{"color":"#FDEBD0","range":[10,25]},{"color":"#FADBD8","range":[25,50]},{"color":"#922B21","range":[50,100]}],"threshold":{"line":{"color":"black","width":3},"thickness":0.8,"value":34.27}},"mode":"gauge+number+delta","number":{"font":{"size":28},"suffix":"%"},"title":{"font":{"size":14},"text":"Forest Loss (%)"},"value":34.27,"type":"indicator"},{"domain":{"column":1,"row":0,"x":[0.55,1.0],"y":[0.0,1.0]},"gauge":{"axis":{"range":[0,100]},"bar":{"color":"#8E44AD"},"steps":[{"color":"#EAFAF1","range":[0,25]},{"color":"#FDEBD0","range":[25,50]},{"color":"#FADBD8","range":[50,75]},{"color":"#922B21","range":[75,100]}]},"mode":"gauge+number","number":{"font":{"size":28},"suffix":"\u002f100"},"title":{"font":{"size":14},"text":"Environmental Impact Score"},"value":67.8,"type":"indicator"}],                        {"template":{"data":{"candlestick":[{"decreasing":{"line":{"color":"#000033"}},"increasing":{"line":{"color":"#000032"}},"type":"candlestick"}],"contourcarpet":[{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"type":"contourcarpet"}],"contour":[{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"type":"contour"}],"heatmap":[{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"type":"heatmap"}],"histogram2d":[{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"type":"histogram2d"}],"icicle":[{"textfont":{"color":"white"},"type":"icicle"}],"sankey":[{"textfont":{"color":"#000036"},"type":"sankey"}],"scatter":[{"marker":{"line":{"width":0}},"type":"scatter"}],"table":[{"cells":{"fill":{"color":"#000038"},"font":{"color":"#000037"},"line":{"color":"#000039"}},"header":{"fill":{"color":"#000040"},"font":{"color":"#000036"},"line":{"color":"#000039"}},"type":"table"}],"waterfall":[{"connector":{"line":{"color":"#000036","width":2}},"decreasing":{"marker":{"color":"#000033"}},"increasing":{"marker":{"color":"#000032"}},"totals":{"marker":{"color":"#000034"}},"type":"waterfall"}]},"layout":{"coloraxis":{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]]},"colorscale":{"diverging":[[0.0,"#000021"],[0.1,"#000022"],[0.2,"#000023"],[0.3,"#000024"],[0.4,"#000025"],[0.5,"#000026"],[0.6,"#000027"],[0.7,"#000028"],[0.8,"#000029"],[0.9,"#000030"],[1.0,"#000031"]],"sequential":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"sequentialminus":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]]},"colorway":["#000001","#000002","#000003","#000004","#000005","#000006","#000007","#000008","#000009","#000010"]}},"title":{"font":{"size":16,"color":"#2C3E50"},"text":"Key Environmental Indicators","x":0.5},"margin":{"t":60,"b":20,"l":30,"r":30},"height":320,"paper_bgcolor":"white"},                        {"responsive": true}                    )                };                            </script>        </div>
+    </div>
+
+    <div class="card chart-section" style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+        <div>
+            <h2>Change Composition</h2>
+            <div>                            <div id="44eaec9a-6cf2-4fc3-b16a-04c0848a4620" class="plotly-graph-div" style="height:380px; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("44eaec9a-6cf2-4fc3-b16a-04c0848a4620")) {                    Plotly.newPlot(                        "44eaec9a-6cf2-4fc3-b16a-04c0848a4620",                        [{"hole":0.42,"hovertemplate":"\u003cb\u003e%{label}\u003c\u002fb\u003e\u003cbr\u003e%{value:.2f}% of total area\u003cextra\u003e\u003c\u002fextra\u003e","labels":["Forest Loss","Urban Expansion","Water Change","Other Change"],"marker":{"colors":["#E74C3C","#E67E22","#3498DB","#95A5A6"],"line":{"color":"white","width":2}},"textfont":{"size":12},"textinfo":"label+percent","values":[34.27,64.81,0.08,0.7600000000000035],"type":"pie"}],                        {"template":{"data":{"candlestick":[{"decreasing":{"line":{"color":"#000033"}},"increasing":{"line":{"color":"#000032"}},"type":"candlestick"}],"contourcarpet":[{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"type":"contourcarpet"}],"contour":[{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"type":"contour"}],"heatmap":[{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"type":"heatmap"}],"histogram2d":[{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"type":"histogram2d"}],"icicle":[{"textfont":{"color":"white"},"type":"icicle"}],"sankey":[{"textfont":{"color":"#000036"},"type":"sankey"}],"scatter":[{"marker":{"line":{"width":0}},"type":"scatter"}],"table":[{"cells":{"fill":{"color":"#000038"},"font":{"color":"#000037"},"line":{"color":"#000039"}},"header":{"fill":{"color":"#000040"},"font":{"color":"#000036"},"line":{"color":"#000039"}},"type":"table"}],"waterfall":[{"connector":{"line":{"color":"#000036","width":2}},"decreasing":{"marker":{"color":"#000033"}},"increasing":{"marker":{"color":"#000032"}},"totals":{"marker":{"color":"#000034"}},"type":"waterfall"}]},"layout":{"coloraxis":{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]]},"colorscale":{"diverging":[[0.0,"#000021"],[0.1,"#000022"],[0.2,"#000023"],[0.3,"#000024"],[0.4,"#000025"],[0.5,"#000026"],[0.6,"#000027"],[0.7,"#000028"],[0.8,"#000029"],[0.9,"#000030"],[1.0,"#000031"]],"sequential":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"sequentialminus":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]]},"colorway":["#000001","#000002","#000003","#000004","#000005","#000006","#000007","#000008","#000009","#000010"]}},"title":{"font":{"size":16,"color":"#2C3E50"},"text":"Change Composition Breakdown","x":0.5},"legend":{"orientation":"h","yanchor":"bottom","y":-0.2},"margin":{"t":60,"b":60,"l":20,"r":20},"paper_bgcolor":"white","showlegend":true,"height":380},                        {"responsive": true}                    )                };                            </script>        </div>
+        </div>
+        <div>
+            <h2>Net Class Change</h2>
+            <div>                            <div id="b2d1500e-a360-4379-9fd4-8722b24175a6" class="plotly-graph-div" style="height:320px; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("b2d1500e-a360-4379-9fd4-8722b24175a6")) {                    Plotly.newPlot(                        "b2d1500e-a360-4379-9fd4-8722b24175a6",                        [{"marker":{"color":["#27AE60","#27AE60","#27AE60","#E74C3C","#27AE60"],"line":{"color":"white","width":1}},"orientation":"h","text":["+0.00%","+0.00%","+0.00%","-4.69%","+4.69%"],"textposition":"outside","x":[0.0,0.0,0.0,-4.69,4.69],"y":["Forest","Urban","Barren","Agriculture","Water"],"type":"bar"}],                        {"template":{"data":{"candlestick":[{"decreasing":{"line":{"color":"#000033"}},"increasing":{"line":{"color":"#000032"}},"type":"candlestick"}],"contourcarpet":[{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"type":"contourcarpet"}],"contour":[{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"type":"contour"}],"heatmap":[{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"type":"heatmap"}],"histogram2d":[{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"type":"histogram2d"}],"icicle":[{"textfont":{"color":"white"},"type":"icicle"}],"sankey":[{"textfont":{"color":"#000036"},"type":"sankey"}],"scatter":[{"marker":{"line":{"width":0}},"type":"scatter"}],"table":[{"cells":{"fill":{"color":"#000038"},"font":{"color":"#000037"},"line":{"color":"#000039"}},"header":{"fill":{"color":"#000040"},"font":{"color":"#000036"},"line":{"color":"#000039"}},"type":"table"}],"waterfall":[{"connector":{"line":{"color":"#000036","width":2}},"decreasing":{"marker":{"color":"#000033"}},"increasing":{"marker":{"color":"#000032"}},"totals":{"marker":{"color":"#000034"}},"type":"waterfall"}]},"layout":{"coloraxis":{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]]},"colorscale":{"diverging":[[0.0,"#000021"],[0.1,"#000022"],[0.2,"#000023"],[0.3,"#000024"],[0.4,"#000025"],[0.5,"#000026"],[0.6,"#000027"],[0.7,"#000028"],[0.8,"#000029"],[0.9,"#000030"],[1.0,"#000031"]],"sequential":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"sequentialminus":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]]},"colorway":["#000001","#000002","#000003","#000004","#000005","#000006","#000007","#000008","#000009","#000010"]}},"shapes":[{"line":{"color":"#2C3E50","width":2},"type":"line","x0":0,"x1":0,"xref":"x","y0":0,"y1":1,"yref":"y domain"}],"title":{"font":{"size":16,"color":"#2C3E50"},"text":"Net Land Use Change per Class (Before \u2192 After)","x":0.5},"font":{"family":"Arial","size":12},"margin":{"t":70,"b":50,"l":120,"r":60},"xaxis":{"title":{"text":"Change (%)"}},"yaxis":{"title":{"text":"Land Use Class"}},"plot_bgcolor":"#F8F9FA","paper_bgcolor":"white","height":320},                        {"responsive": true}                    )                };                            </script>        </div>
+        </div>
+    </div>
+
+    <!-- Risk & Action -->
+    <div class="card">
+        <h2>Risk Assessment &amp; Recommended Action</h2>
+        <div class="finding-block">
+            <strong>Risk Level:</strong>
+            <span style="color:#E74C3C;font-weight:bold">HIGH</span>
+        </div>
+        <div class="finding-block">
+            <strong>Description:</strong> Severe deforestation detected. Significant habitat and carbon stock loss.
+        </div>
+        <div class="finding-block">
+            <strong>Recommended Action:</strong> Immediate environmental intervention required. Alert conservation agencies.
+        </div>
+    </div>
+
+    <div class="footer">
+        AI-Powered Land Use &amp; Deforestation Analysis System &nbsp;|&nbsp;
+        Report generated automatically from satellite imagery pair.
+    </div>
+</div>
+</body>
+</html>

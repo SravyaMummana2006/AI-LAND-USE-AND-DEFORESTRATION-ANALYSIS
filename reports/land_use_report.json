@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "generated_at": "2026-04-20 11:59:13",
+    "system": "AI Land Use & Deforestation Analysis v1.0"
+  },
+  "metrics": {
+    "forest_loss_pct": 34.27,
+    "forest_gain_pct": 0.14,
+    "net_forest_change_pct": -34.19,
+    "old_forest_pct": 99.75,
+    "new_forest_pct": 65.56,
+    "urban_expansion_pct": 64.81,
+    "old_urban_pct": 0.64,
+    "new_urban_pct": 65.28,
+    "water_change_pct": 0.08,
+    "old_water_pct": 0.0,
+    "new_water_pct": 0.08,
+    "total_changed_pct": 99.92,
+    "num_changed_regions": 1
+  },
+  "eis_score": 67.8,
+  "risk": {
+    "level": "High",
+    "color": "#E74C3C",
+    "description": "Severe deforestation detected. Significant habitat and carbon stock loss.",
+    "action": "Immediate environmental intervention required. Alert conservation agencies."
+  },
+  "findings": {
+    "summary": "Analysis of the submitted satellite imagery pair reveals that 99.9% of the observed landscape has undergone detectable change, distributed across a single concentrated region. The composite Environmental Impact Score is 67.8/100, indicating severe environmental disruption. Risk classification: HIGH \u2014 Severe deforestation detected. Significant habitat and carbon stock loss. Recommended action: Immediate environmental intervention required. Alert conservation agencies.",
+    "forest": "Forest cover has reduced by 34.2% (from 99.8% to 65.6% of the observed area), representing critical deforestation with a loss footprint of 34.3% of total image area. Emergency conservation intervention is immediately required.",
+    "urban": "Urban expansion of 64.6% detected (from 0.6% to 65.3%), indicating rapid growth of built-up infrastructure within the observed area. The concurrent forest loss of 34.3% suggests that urban development may be directly encroaching on forested land.",
+    "water": "Water body coverage remained stable at approximately 0.1% of the observed area.",
+    "class_bullets": [
+      "Forest cover remained stable with no significant change detected. (0.0% \u2192 0.0%)",
+      "Urban footprint showed no significant change between observations. (0.0% \u2192 0.0%)",
+      "Barren land area showed no significant change detected. (0.0% \u2192 0.0%)",
+      "Agricultural land reduced by 4.7% \u2014 possible abandonment or conversion to other use. (100.0% \u2192 95.3%)",
+      "Water body area expanded by 4.7% \u2014 possible flooding or seasonal inflow. (0.0% \u2192 4.7%)"
+    ]
+  }
+}
