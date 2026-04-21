@@ -1,4 +1,5 @@
 # 🌿 AI Land Use & Deforestation Analysis System
+https://ai-land-use-and-deforestration-analysis.onrender.com
 
 > An AI-powered satellite image analysis dashboard for detecting deforestation, classifying land use, and generating environmental impact reports — built with TensorFlow, OpenCV, and Streamlit.
 
