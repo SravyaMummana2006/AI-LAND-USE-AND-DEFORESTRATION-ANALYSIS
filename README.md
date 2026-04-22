@@ -1,3 +1,4 @@
+AI-powered system for satellite image analysis that classifies land use and detects deforestation using CNN and change detection techniques. Includes Environmental Impact Scoring (EIS) and AI-generated insights for real-world environmental monitoring.
 # 🌿 AI Land Use & Deforestation Analysis System
 https://ai-land-use-and-deforestration-analysis.onrender.com
 
